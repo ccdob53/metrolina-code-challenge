@@ -2,6 +2,9 @@
 
 ## Setup
 
+### Prerequisites
+- Python 3.8 or higher
+
 ### Create and activate a virtual environment
 
 ```bash
@@ -25,11 +28,13 @@ pip install -r requirements.txt
 
 ### Provide the API key
 
-Set the API key as an environment variable before running tests.
+Create a `.env` file in the project root with the following content:
 
 ```bash
-export API_KEY="your-api-key-here"
+API_KEY="your-api-key-here"
 ```
+
+This should look like .env.example, but with your actual API key.
 
 ## Tests
 
