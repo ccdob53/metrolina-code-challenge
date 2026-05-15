@@ -1,0 +1,22 @@
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+fix = false
+
+[tool.ruff.lint]
+select = [
+  "E",  # pycodestyle errors
+  "F",  # pyflakes
+  "I",  # isort-compatible import sorting
+  "B",  # flake8-bugbear
+]
+ignore = [
+  "E501", # line length handled by Black
+]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
